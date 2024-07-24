@@ -111,8 +111,12 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  width: 35%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  display: block;
+  margin: 0 auto; /* Opcional: centrar la imagen horizontalmente */
 }
 
 .bio {
@@ -134,8 +138,12 @@ nav ul li {
 
 /* More about */
 .more-about {
+  text-align: justify;
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  margin: 0 auto; /* Centra el texto si el contenedor es más ancho */
+  max-width: 800px; /* Limita el ancho del párrafo para una mejor lectura */
 }
 
 .more-about h2 {
@@ -210,6 +218,10 @@ nav ul li {
 
 .project-details {
   margin-bottom: var(--bottom-margin);
+  text-align: justify;
+  /* Opcional: Añadir un pequeño margen para mejorar la legibilidad */
+  margin: 0;
+  padding: 0;
 }
 
 /* Projects section ends */
@@ -426,4 +438,11 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
+}
+
+.bio-text {
+  text-align: justify;
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  margin: 0 auto; /* Centra el texto si el contenedor es más ancho */
+  max-width: 800px; /* Limita el ancho del párrafo para una mejor lectura */
 }
